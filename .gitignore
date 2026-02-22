@@ -1,0 +1,17 @@
+# Ignore data files
+data/
+*.csv
+
+# Ignore dashboard exports
+dashboard/
+*.xlsx
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+# Excel outputs / dashboards
+dashboard/*.xlsx
+dashboard/*.xls
