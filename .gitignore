@@ -1,17 +1,41 @@
-# Ignore data files
+# -------------------------
+# Data (keep private/large)
+# -------------------------
 data/
 *.csv
 
-# Ignore dashboard exports
-dashboard/
-*.xlsx
-
-# Jupyter
-.ipynb_checkpoints/
-
-# Python cache
-__pycache__/
-*.pyc
-# Excel outputs / dashboards
+# -------------------------
+# Dashboard outputs (Excel)
+# -------------------------
 dashboard/*.xlsx
 dashboard/*.xls
+
+# If you want to upload the final Excel dashboard, UNCOMMENT these 2 lines:
+# !dashboard/
+# !dashboard/motor_summary.xlsx
+
+# -------------------------
+# Jupyter
+# -------------------------
+.ipynb_checkpoints/
+
+# -------------------------
+# Python cache
+# -------------------------
+__pycache__/
+*.pyc
+
+# -------------------------
+# Environments
+# -------------------------
+.venv/
+venv/
+env/
+*.env
+
+# -------------------------
+# OS / Editor
+# -------------------------
+.DS_Store
+Thumbs.db
+.vscode/
