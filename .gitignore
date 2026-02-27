@@ -1,41 +1,45 @@
-# -------------------------
-# Data (keep private/large)
-# -------------------------
-data/
-*.csv
+# -----------------------------
+# DATA (keep folder, ignore raw files)
+# -----------------------------
+data/*.csv
+data/*.xlsx
+data/*.xls
+!data/README.md
+!data/.gitkeep
 
-# -------------------------
-# Dashboard outputs (Excel)
-# -------------------------
+# -----------------------------
+# DASHBOARD EXPORTS (ignore generated files)
+# -----------------------------
 dashboard/*.xlsx
 dashboard/*.xls
 
-# If you want to upload the final Excel dashboard, UNCOMMENT these 2 lines:
-# !dashboard/
-# !dashboard/motor_summary.xlsx
-
-# -------------------------
-# Jupyter
-# -------------------------
+# -----------------------------
+# JUPYTER
+# -----------------------------
 .ipynb_checkpoints/
+*.ipynb_checkpoints
 
-# -------------------------
-# Python cache
-# -------------------------
+# -----------------------------
+# PYTHON CACHE / BUILD
+# -----------------------------
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyd
+*.pyo
+*.so
 
-# -------------------------
-# Environments
-# -------------------------
+# -----------------------------
+# VENV / ENV FILES
+# -----------------------------
 .venv/
 venv/
 env/
+ENV/
 *.env
 
-# -------------------------
-# OS / Editor
-# -------------------------
+# -----------------------------
+# OS / EDITOR
+# -----------------------------
 .DS_Store
 Thumbs.db
 .vscode/
