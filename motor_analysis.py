@@ -7,7 +7,7 @@ using the freMTPL2 motor insurance dataset.
 """
 
 import pandas as pd
-
+from pathlib import Path
 
 # --------------------------------------------------
 # 1. Load Dataset
@@ -104,7 +104,17 @@ def export_to_excel(age_df, vehicle_df, bm_df):
 # --------------------------------------------------
 
 if __name__ == "__main__":
-    df = load_data("data.csv")
+    PROJECT_ROOT = Path(__file__).resolve().parent
+DATA_PATH = PROJECT_ROOT / "data" / "data.csv"
+
+if not DATA_PATH.exists():
+    raise FileNotFoundError(
+        f"\nDataset not found at: {DATA_PATH}\n"
+        "Please place your dataset file as 'data/data.csv'.\n"
+        "The dataset is not included in the repository."
+    )
+
+df = load_data(str(DATA_PATH))
 
     df["Claim_Frequency"] = df["ClaimNb"] / df["Exposure"]
 
