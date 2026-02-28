@@ -4,6 +4,23 @@
 
 This project analyses a motor insurance portfolio to compute exposure-adjusted claim frequency and identify key risk drivers.
 
+## Project Structure
+
+```
+motor-insurance-frequency-analysis/
+│
+├── data/                # Dataset location (not included in repo)
+│   └── README.md
+│
+├── notebooks/           # Exploratory analysis notebook
+│   └── motor_insurance_frequency_analysis.ipynb
+│
+├── motor_analysis.py    # Script version of analysis
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
+
 ## Dataset
 
 - freMTPL2 Motor Insurance Dataset (public dataset)
@@ -31,6 +48,13 @@ Claim Frequency = Total Claims / Total Exposure
 - Python (Pandas, Matplotlib)
 - Jupyter Notebook
 - Excel (dashboard)
+
+## How to Run This Project
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/Nidhi-analysis/motor-insurance-frequency-analysis.git
+cd motor-insurance-frequency-analysis
 
 ## Future Improvements
 
